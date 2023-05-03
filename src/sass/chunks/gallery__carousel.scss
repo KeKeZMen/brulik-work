@@ -2,23 +2,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   &__controll {
     width: 35px;
     height: 25px;
     cursor: pointer;
-    background: url("./img/vector.svg") no-repeat center;
+    background: url("../img/vector.svg") no-repeat center;
     border: none;
     outline: none;
+    position: absolute;
+
+    &:hover{
+      fill: #f7931e;
+    }
+
+    &:first-child{
+      left: -70px;
+    }
+
+    &:last-child{
+      right: -70px;
+      transform: rotate(180deg);
+    }
   }
 
   &__line {
     display: flex;
-    overflow: hidden;
+    overflow-y: hidden;
     scroll-behavior: smooth;
     width: 100%;
     cursor: pointer;
     padding-bottom: 30px;
+    width: 1162px;
+
+    @include tablet{
+      width: 768px;
+    }
 
     &.dragging {
       cursor: grab;

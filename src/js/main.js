@@ -4,7 +4,7 @@ const galleryCarousel = new Slider(
   ".gallery__carousel__line",
   ".gallery__carousel__line__element",
   ".gallery__carousel__controll",
-  38,
+  30,
   "galleryCarouselLeft",
   1
 );

@@ -41,5 +41,5 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
       }
     }]);
     return _class;
-  }())(".gallery__carousel__line", ".gallery__carousel__line__element", ".gallery__carousel__controll", 38, "galleryCarouselLeft", 1).sliderInit();
+  }())(".gallery__carousel__line", ".gallery__carousel__line__element", ".gallery__carousel__controll", 30, "galleryCarouselLeft", 1).sliderInit();
 })();
