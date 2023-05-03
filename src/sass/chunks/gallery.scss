@@ -1,0 +1,14 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  @import "./gallery__carousel.scss";
+}

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: url("../img/bg.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+main {
+  background-color: #0c1417;
+  padding-top: 100px;
+  padding-bottom: 111px;
+}
+
+footer {
+  background-color: #000000;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include phone {
+    max-width: 320px;
+  }
+
+  @include tablet {
+    max-width: 768px;
+  }
+}

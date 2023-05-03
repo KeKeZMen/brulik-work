@@ -1,0 +1,50 @@
+@import "./nav.scss";
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  &__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    margin-bottom: 35px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 55px;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+    
+    &:hover {
+      &::after {
+        border: 1px solid #f7931e;
+        background-color: #f7931e;
+      }
+    }
+    
+    &::after {
+      transition: .4s;
+      position: absolute;
+      content: "";
+      height: 60px;
+      width: 280px;
+      left: -33px;
+      top: -20px;
+      border: 1px solid white;
+      transform: translateZ(-1px) skew(-20deg);
+    }
+  }
+}

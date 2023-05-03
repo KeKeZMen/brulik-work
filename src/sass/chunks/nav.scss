@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 55px;
+  margin-bottom: 255px;
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    &__link {
+      a {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        transition: 0.4s;
+
+        &:hover {
+          color: #f7931e;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 80px;
+      }
+    }
+  }
+
+  &__phone {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    transition: 0.4s;
+
+    &:hover {
+      color: #f7931e;
+    }
+  }
+}
